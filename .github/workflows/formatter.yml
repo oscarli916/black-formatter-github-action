@@ -9,6 +9,7 @@ jobs:
       - name: Black format
         uses: psf/black@stable
         with:
+          options: "-v"
           src: "./app"
       - name: Commit formatted code
         run: |
