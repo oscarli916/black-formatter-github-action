@@ -13,7 +13,7 @@ jobs:
           src: "./app"
       - name: Commit formatted code
         run: |
-          git config --global user.name 'Oscar Li'
-          git config --global user.email 'oscar_li916@yahoo.com.hk'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -am "style: black format"
           git push
