@@ -1,0 +1,18 @@
+name: black formatter
+on: [push, pull_request]
+jobs:
+  black_format:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Black format
+        uses: psf/black@stable
+        with:
+          src: "./app"
+      - name: Commit formatted code
+        run: |
+          git config --global user.name 'Oscar Li'
+          git config --global user.email 'oscar_li916@yahoo.com.hk'
+          git commit -am "style: black format"
+          git push
