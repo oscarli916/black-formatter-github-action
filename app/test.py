@@ -1,5 +1,10 @@
-def haha(a: int, b: int):
-    return a + b
 
 
-print("hello")
+
+
+
+def haha(a:int,b:int):
+    return a+b
+
+
+print('hello')
